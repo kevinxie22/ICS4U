@@ -1,0 +1,49 @@
+/* *
+ * S509/ICS4U1-11 ( Unit 3 - HighestGrade)
+ * Create a HighestGrade application that prompts the user 
+ * for five grades between 0 and 100 points and stores the 
+ * grades in an ArrayList. HighestGrade then traverses the 
+ * grades to determine the highest grade and then displays 
+ * the grade along with an appropriate message.
+ * 
+ * Output:
+ *
+ * Enter a grade (between 0 and 100): 87
+ * Enter a grade (between 0 and 100): 65
+ * Enter a grade (between 0 and 100): 98
+ * Enter a grade (between 0 and 100): 89
+ * Enter a grade (between 0 and 100): 55
+ * The highest grade is: 98
+*/
+
+/**
+ * @author Kevin Xie
+ * Teacher  Mr. PC
+ */
+
+Here are my outputs: 
+
+=======Test Case 1=======
+Enter a grade (between 0 and 100): 93
+Enter a grade (between 0 and 100): 90
+Enter a grade (between 0 and 100): 89
+Enter a grade (between 0 and 100): 98
+Enter a grade (between 0 and 100): 87
+Highest grade: 98.0
+
+
+=======Test Case 2 Error: grade is NOT a number=======
+Invalid input! Make sure the grade is between 0 and 100!
+Please enter the grade:  adsf
+Invalid input! Make sure the grade is between 0 and 100!
+Please enter the grade:  v
+Invalid input! Make sure the grade is between 0 and 100!
+Please enter the grade:  
+
+
+=======Test Case 3  Error: grade is NOT between 0~100=======
+Enter a grade (between 0 and 100): -20
+Invalid input! Make sure the grade is between 0 and 100!
+Please enter the grade:  120
+Invalid input! Make sure the grade is between 0 and 100!
+Please enter the grade:  

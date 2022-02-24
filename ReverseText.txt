@@ -1,0 +1,18 @@
+/**
+ * S509/ICS4U1-11 ( Unit 3 - ReverseText)
+ *
+ * Create a ReverseText application that prompts the user
+ * for a string and then displays the text in reverse order.
+ *  Application output should look similar to:
+ *
+ *  Output:
+ *  Enter your name: java Rocks!
+ *  !skcoR avaj
+ * 
+ */
+
+/**
+ * @author Kevin Xie
+ * Teacher  Mr. PC
+ */
+

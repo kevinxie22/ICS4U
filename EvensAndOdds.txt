@@ -1,0 +1,50 @@
+/**
+ * S509/ICS4U1-11 ( Unit 3 - EvensAndOdds)
+ * 
+ * Create an EvensOdds application that generates 25 
+ * random integers between 0 and 99 and then displays 
+ * all the evens on one line and all the odds on the 
+ * next line.Application output should look similar to:
+ *
+ *	ODD:
+ *	37 85 73 63 65 5 67 45 65 61 13 75 47 11 
+ *	EVEN:
+ *	96 64 62 80 58 10 22 78 14 18 32 
+ */
+
+/**
+ * @author Kevin Xie
+ * Teacher  Mr. PC
+ */
+
+public class EvensAndOdds {
+
+	//Total 25 random numbers will be generated in the application
+	private static final int ARRAY_LENGTH=25;
+	
+	public static void main(String[] args) {
+		
+		int[] randomNum = new int[ARRAY_LENGTH];
+
+		for(int i=0; i<ARRAY_LENGTH; i++) {
+			//generate random integers between 0 to 99
+			randomNum[i] = (int)(Math.random()*100);
+		}
+		
+		System.out.println("ODD:");
+		for(int i=0; i<ARRAY_LENGTH; i++) {
+			if(randomNum[i]%2 != 0) {
+				System.out.print(randomNum[i]+" ");
+			}
+		}
+		
+		System.out.println("\nEVEN:");
+		for(int i=0; i<ARRAY_LENGTH; i++) {
+			if(randomNum[i]%2 == 0) {
+				System.out.print(randomNum[i]+" ");
+			}
+		}
+
+	}
+
+}

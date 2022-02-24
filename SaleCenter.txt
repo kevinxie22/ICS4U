@@ -1,0 +1,141 @@
+/**
+ * S509/ICS4U1-11 ( Unit 2 - SaleCenter)
+ * @author Kevin Xie
+ * Teacher  Mr. PC
+ */
+
+Application 2:
+
+The SalesCenter application should provide a menu of options. Depending
+on the option selected, additional input may be needed.
+ 
+SalesCenter Code Design
+The SalesCenter application can be modeled with objects for a manager and 
+two associates. The manager and associate objects are both employee objects.
+ Therefore, an Employee abstract class should be used for subclasses Manager
+ and Associate. The Employee class should define an emplyee’s first and last 
+name and include an abstract method for calculating pay. A manager’s pay is 
+based on a pay period specified in weeks. Associates are paid by the hour. 
+The abstract pay() method in Employee will have different implementations
+ in Manager and Associate. The SalesCenter class designs are:
+
+
+The SalesCenter class has the main method. Based on the algorithm and the 
+class designs, the SalesCenter code design will include a loop. 
+The pseudocode for the SalesCenter client code follows:
+
+The SalesCenter application should
+
+       1. Display a menu of options.
+       2. Prompt the user for a menu choice.
+       3 . If the user has not selected to quit, prompt the user to
+            specify employee 1, 2, or 3.
+       4. Perform the action requested by the user.
+       5. Repeat steps 1 through 4 until the user has selected the option to quit
+
+some of my outputs are listed below:
+
+=========Test Case 1 - test Employee/Manager/Associate class===========
+===========================================================
+
+----------Sale Center Main Menu------------
+- Enter 1 to select Empolyee
+- Enter 2 to enter pay period and learn pay
+- Enter 3 to quit
+-------------------------------------------
+Enter choice (1-Empolyee, 2-Pay or 3-Quit): 1
+Enter choice(1 for the Manager or 2 and 3 for associates): 1
+Manager [Rose Christian]
+
+----------Sale Center Main Menu------------
+- Enter 1 to select Empolyee
+- Enter 2 to enter pay period and learn pay
+- Enter 3 to quit
+-------------------------------------------
+Enter choice (1-Empolyee, 2-Pay or 3-Quit): 1
+Enter choice(1 for the Manager or 2 and 3 for associates): 2
+Associate [Kevin Xie]
+
+----------Sale Center Main Menu------------
+- Enter 1 to select Empolyee
+- Enter 2 to enter pay period and learn pay
+- Enter 3 to quit
+-------------------------------------------
+Enter choice (1-Empolyee, 2-Pay or 3-Quit): 1
+Enter choice(1 for the Manager or 2 and 3 for associates): 3
+Associate [David Goodenough]
+
+
+
+=========Test Case 2 - test Pay() method===========
+===========================================================
+----------Sale Center Main Menu------------
+- Enter 1 to select Empolyee
+- Enter 2 to enter pay period and learn pay
+- Enter 3 to quit
+-------------------------------------------
+Enter choice (1-Empolyee, 2-Pay or 3-Quit): 2
+Enter choice(1 for the Manager or 2 and 3 for associates):  1
+Please enter the hours for associate or weeks for manager: 20
+Manager [Rose Christian] Yearly Salary: $71,000.00
+Their pay for 20.0 weeks is:$27,307.69
+
+----------Sale Center Main Menu------------
+- Enter 1 to select Empolyee
+- Enter 2 to enter pay period and learn pay
+- Enter 3 to quit
+-------------------------------------------
+Enter choice (1-Empolyee, 2-Pay or 3-Quit): 2
+Enter choice(1 for the Manager or 2 and 3 for associates):  2
+Please enter the hours for associate or weeks for manager: 40
+Associate [Kevin Xie]Hourly Salary: $22.04
+Their pay for 40.0 hours is:$881.60
+
+----------Sale Center Main Menu------------
+- Enter 1 to select Empolyee
+- Enter 2 to enter pay period and learn pay
+- Enter 3 to quit
+-------------------------------------------
+Enter choice (1-Empolyee, 2-Pay or 3-Quit): 2
+Enter choice(1 for the Manager or 2 and 3 for associates):  3
+Please enter the hours for associate or weeks for manager: 30
+Associate [David Goodenough]Hourly Salary: $22.04
+Their pay for 30.0 hours is:$591.30
+
+
+=========Test Case 3 - test quit and invalid user input ===========
+** invalid input include: 
+* 	a) input is a integer but not valid selection e.g 1, 2, 3
+* 	b) input is a string but an integer for pay rate
+===========================================================
+----------Sale Center Main Menu------------
+- Enter 1 to select Empolyee
+- Enter 2 to enter pay period and learn pay
+- Enter 3 to quit
+-------------------------------------------
+Enter choice (1-Empolyee, 2-Pay or 3-Quit): 4
+Invalid input!Please enter 1, 2, 3 only: wewr
+Invalid input! Please enter 1, 2, 3 only: 3
+Goodbye!
+
+----------Sale Center Main Menu------------
+- Enter 1 to select Empolyee
+- Enter 2 to enter pay period and learn pay
+- Enter 3 to quit
+-------------------------------------------
+Enter choice (1-Empolyee, 2-Pay or 3-Quit): 4
+Invalid input!Please enter 1, 2, 3 only: wewr
+Invalid input! Please enter 1, 2, 3 only: 3
+Goodbye!
+
+----------Sale Center Main Menu------------
+- Enter 1 to select Empolyee
+- Enter 2 to enter pay period and learn pay
+- Enter 3 to quit
+-------------------------------------------
+Enter choice (1-Empolyee, 2-Pay or 3-Quit): 2
+Enter choice(1 for the Manager or 2 and 3 for associates):  2
+Please enter the hours for associate or weeks for manager: afaf
+Invalid input! Please enter number only: 89.999
+Associate [Kevin Xie]Hourly Salary: $22.04
+Their pay for 89.999 hours is:$1,983.58

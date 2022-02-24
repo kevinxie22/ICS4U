@@ -1,0 +1,108 @@
+/**
+ * S509/ICS4U1-11 ( Unit 2 - Bank)
+ * 
+ * Study the textbook example from page 187-190 for more understanding.
+ * The Bank program specification is best implemented with two classes. 
+ * Bank (Class) has Account(Class) member variable and  
+ * One Account (class) has a member variable of Customer (Class).
+
+ * Review:
+ * Modify the Customer class to include changeStreet(), changeCity(), 
+ * changeState(), and changeZip() methods. Modify the Account class
+ * to include a changeAddress() method that has street, city, state, 
+ * and zip parameters. Modify the Bank application to test the 
+ * changeAddress() method.
+ * 
+ */
+
+
+/**
+ * @author Kevin Xie
+ * Teacher  Mr. PC
+ */
+
+here is the test output:
+
+=======1======Deposit&withdrew=========
+Maria Munoz
+110 Glades Road
+Mytown, FL 33445
+Current balance is $250.00
+
+/** deposit & NO enough money to withdrew*/
+Press (1) to deposit/withdraw or (2) to continue:1
+Enter deposit amount: 200
+Balance is: $450.00
+Enter withdrawal amount: 500
+Not enough money in account.
+Balance is: $450.00
+
+/** deposit &  enough money to withdrew*/
+Press (1) to deposit/withdraw or (2) to continue:1
+Enter deposit amount: 100
+Balance is: $550.00
+Enter withdrawal amount: 200
+Balance is: $350.00
+
+=======2======Change Adrress=========
+Press (1) to deposit/withdraw or (2) to continue:2
+
+Press (1) to change address or (2) to continue:1
+Enter your new state:Ontario
+Enter your new city:Richmond Hill
+Enter your new street:Tower Hill
+Enter your new zip:L4e 5E7
+The updated address is:
+Tower Hill
+Richmond Hill
+Ontario
+L4e 5E7
+
+Press (1) to see your updated information or (2) to quit:1
+Maria Munoz
+Tower Hill
+Richmond Hill, Ontario L4e 5E7
+Current balance is $350.00
+
+Press (1) to see your updated information or (2) to quit:2
+Good Bye & Have a nice day!
+
+=======3======Change Name=========
+Press (1) to deposit/withdraw or (2) to continue:2
+
+Press (1) to change address or (2) to continue:2
+
+Press (1) to change name information or (2) to move on:1
+
+Enter updated first name:Kevin
+Enter updated last name:Xie
+The updated full name is:
+Kevin Xie
+
+Press (1) to see your updated information or (2) to quit:1
+Kevin Xie
+Tower Hill
+Richmond Hill, Ontario L4e 5E7
+Current balance is $350.00
+
+Press (1) to see your updated information or (2) to quit:2
+Good Bye & Have a nice day!
+
+=======4======Default: Continue=========
+Maria Munoz
+110 Glades Road
+Mytown, FL 33445
+Current balance is $250.00
+
+Press (1) to deposit/withdraw or (2) to continue:2
+
+Press (1) to change address or (2) to continue:2
+
+Press (1) to change name information or (2) to move on:2
+
+Maria Munoz
+110 Glades Road
+Mytown, FL 33445
+Current balance is $250.00
+
+Press (1) to deposit/withdraw or (2) to continue:

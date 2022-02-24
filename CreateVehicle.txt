@@ -1,0 +1,107 @@
+/**
+ * S509/ICS4U1-11 ( Unit 2 - Vehicle)
+ * 
+ * Create a Vehicle super class and create two 
+ * subclasses Car and Truck . Extend the two 
+ * subclasses to the super class to inherit
+ *  the member variables and methods. Create 
+ *  a CreateVehicle class with the main method
+ *  to create objects of the two sub classes. 
+ *  
+ */
+
+/**
+ * @author Kevin Xie
+ * Teacher  Mr. PC
+ */
+
+/******below are some of outputs when run the application ********/
+
+----------TEST CASE 1------------------------------
+* - create car ( test Car class)
+* - modify car color (test getter and setter )
+----------------------------------------------------------
+Welcome to CreateVehicle application! ^_^ 
+Please follow the intructions to create your own vehicle.
+
+Press 1 to create a car or 2 to create a truck: 1
+Please specify the vehicle color: red
+Please specify the number of cylinder: 4
+Please specify the number of seats: 6
+You vehicle is now created:
+Car [noOfSeats=6, color=red, noOfCylinders=4]
+
+Press 1 modify your vehicle, 2 to confirm and quit: 1
+Select the attribute you would like to change: Press "1"-color,  "2"# of cylinders, "3" # of seats: 1
+Your car current color is red.
+Please enter new color:blue
+Your car is now updated in blue
+
+You vehicle now is:
+Car [noOfSeats=6, color=blue, noOfCylinders=4]
+
+
+----------TEST CASE 2------------------------------
+* - create truck ( test Truck class)
+* - modify truck # of cylinder (test getter and setter)
+----------------------------------------------------------
+Welcome to CreateVehicle application! ^_^ 
+Please follow the intructions to create your own vehicle.
+
+Press 1 to create a car or 2 to create a truck: 2
+Please specify the vehicle color: white
+Please specify the number of cylinder: 6
+Please specify the towing capacity: 123
+You vehicle is now created:
+Truck [towingCapacity=123, color=white, noOfCylinders=6]
+
+Press 1 modify your vehicle, 2 to confirm and quit: 1
+Select the attribute you want to change: Press "1"-color,  "2"# of cylinders, "3" towing capactiy: 2
+Your car current has 6 cylinder.
+Please enter the new # of cylinders: 4
+Your car now updated with 4 Cylinder:
+
+You vehicle now is:
+Truck [towingCapacity=123, color=white, noOfCylinders=4]
+
+----------TEST CASE 3------------------------------
+* - create car ( test Car class)
+* - modify car seat(test getter and setter )
+----------------------------------------------------------
+Welcome to CreateVehicle application! ^_^ 
+Please follow the intructions to create your own vehicle.
+
+Press 1 to create a car or 2 to create a truck: 1
+Please specify the vehicle color: yellow
+Please specify the number of cylinder: 8
+Please specify the number of seats: 4
+You vehicle is now created:
+Car [noOfSeats=4, color=yellow, noOfCylinders=8]
+
+Press 1 modify your vehicle, 2 to confirm and quit: 1
+Select the attribute you would like to change: Press "1"-color,  "2"# of cylinders, "3" # of seats: 3
+Your car current has 4 seats.
+Please enter the new # of seats: 6
+Your car now updated with 6 seats
+
+You vehicle now is:
+Car [noOfSeats=6, color=yellow, noOfCylinders=8]
+
+----------TEST CASE 3------------------------------
+* validate wrong input number other than 1 or 2 
+* validate quit when select quit(2)
+* (limitation: only able to take interget as input)
+----------------------------------------------------------
+Welcome to CreateVehicle application! ^_^ 
+Please follow the intructions to create your own vehicle.
+
+Press 1 to create a car or 2 to create a truck: 3
+Error Input! Prese 1 to create a car or 2 to create a truck: 2
+Please specify the vehicle color: red 
+Please specify the number of cylinder: 3
+Please specify the towing capacity: 234
+You vehicle is now created:
+Truck [towingCapacity=234, color=red , noOfCylinders=3]
+
+Press 1 modify your vehicle, 2 to confirm and quit: 2
+Goodbye! Have a nice day!

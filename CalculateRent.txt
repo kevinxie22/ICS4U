@@ -1,0 +1,107 @@
+/**
+ * S509/ICS4U1-11 ( Unit 3 - CalculateRent)
+ * Rent Charged for a condominium apartment  in dollors
+ *
+ *  Floor	Studio	One Bedroom	Two Bedroom
+ *  1	  750	    900	                   1200
+ *  2            850	    1000	                   1300
+ *  3	  950	    1100	                   1400
+ *  4           1050	    1300	                   1500
+ * 
+ * Create an application that prompts user for the floor 
+ * and number of bedrooms and provides the rent.
+ *
+ *  Create a loop to repeat the process. Your output should look similar to: 
+ *
+ * Enter the floor
+ * 2
+ * Enter # of bedrooms: 
+ * 2
+ * The rent per month is(floor: 2  bedroom: 2) $1300
+ * Select another floor or -1 to exit
+ */
+
+/**
+ * @author Kevin Xie
+ * Teacher  Mr. PC
+ */
+
+*****Below are some of output from my code:
+
+========TEST CASE 1 ========
+Enter the floor (between 1 and 4) or -1 to quit: 
+1
+Enter the bedrooms: [S]tudio//[O]neBedroom//[T]wo Bedrooom: 
+s
+The rent per month is (floor: 1 bedroom: 0) $750
+Select another floor(between 1 and 4) or -1 to exit: 
+2
+Enter the bedrooms: [S]tudio//[O]neBedroom//[T]wo Bedrooom: 
+t
+The rent per month is (floor: 2 bedroom: 2) $1300
+Select another floor(between 1 and 4) or -1 to exit: 
+3
+Enter the bedrooms: [S]tudio//[O]neBedroom//[T]wo Bedrooom: 
+o
+The rent per month is (floor: 3 bedroom: 1) $1100
+Select another floor(between 1 and 4) or -1 to exit: 
+4
+Enter the bedrooms: [S]tudio//[O]neBedroom//[T]wo Bedrooom: 
+s
+The rent per month is (floor: 4 bedroom: 0) $1050
+Select another floor(between 1 and 4) or -1 to exit: 
+
+
+========TEST CASE 2 -  Invlid Input:: floor (1)========
+Enter the floor (between 1 and 4) or -1 to quit: 
+wewe
+Error input! Enter the floor (between 1 and 4) or -1 to quit: 5
+Error input! Enter the floor (between 1 and 4) or -1 to quit: -1
+Goodbye!
+
+
+========TEST CASE 3 -  Invlid Input:: floor (2)========
+Enter the floor (between 1 and 4) or -1 to quit: 
+2
+Enter the bedrooms: [S]tudio//[O]neBedroom//[T]wo Bedrooom: 
+s
+The rent per month is (floor: 2 bedroom: 0) $850
+Select another floor(between 1 and 4) or -1 to exit: 
+222
+Error input! Enter the floor (between 1 and 4) or -1 to quit: df
+Error input! Enter the floor (between 1 and 4) or -1 to quit: -5
+Error input! Enter the floor (between 1 and 4) or -1 to quit: -9
+Error input! Enter the floor (between 1 and 4) or -1 to quit: 
+
+
+========TEST CASE 4 - Invlid Input:: bedrooom========
+Enter the floor (between 1 and 4) or -1 to quit: 
+1
+Enter the bedrooms: [S]tudio//[O]neBedroom//[T]wo Bedrooom: 
+dfd
+Please enter "S", "O", "T" only! (case not sensitive) 
+Enter the bedrooms [S]tudio//[O]neBedroom//[T]wo Bedrooom: 
+a
+Please enter "S", "O", "T" only! (case not sensitive) 
+Enter the bedrooms [S]tudio//[O]neBedroom//[T]wo Bedrooom: 
+-1
+Please enter "S", "O", "T" only! (case not sensitive) 
+Enter the bedrooms [S]tudio//[O]neBedroom//[T]wo Bedrooom: 
+6
+Please enter "S", "O", "T" only! (case not sensitive) 
+Enter the bedrooms [S]tudio//[O]neBedroom//[T]wo Bedrooom: 
+
+========TEST CASE 5 - quit (1)========
+Enter the floor (between 1 and 4) or -1 to quit: 
+-1
+Goodbye!
+
+========TEST CASE 5 - quit (2)========
+Enter the floor (between 1 and 4) or -1 to quit: 
+2
+Enter the bedrooms: [S]tudio//[O]neBedroom//[T]wo Bedrooom: 
+o
+The rent per month is (floor: 2 bedroom: 1) $1000
+Select another floor(between 1 and 4) or -1 to exit: 
+-1
+Goodbye!

@@ -1,0 +1,35 @@
+Create a Student class(Template class) and a StudentMain class(Client class)
+that will generate a simple student report card as below:
+
+Clarification for the unit 2 applications:
+
+for 'StudentInformation' application, You prompt a user to enter his/her information.
+
+Here is a  possible output of the 'StudentInformation' application.
+
+WELCOME TO STUDENT INFORMATION
+------------------------------
+
+Enter Name:
+Tom
+Enter Age:
+18
+Enter Roll Number:
+123
+How many marks would you like to add?
+3
+Enter Score 1:
+90
+Enter Score 2:
+98
+Enter Score 3:
+85
+
+(Once a user enters the above information, you  program should print the report card as shown below)
+
+Student Report Card:
+
+Tom is 18 years old.
+His/Her roll number is 123.
+
+His/Her average is 91.00.
